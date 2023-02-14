@@ -1,11 +1,10 @@
-attrs==21.2.0
-configparser==4.0.2
-contextlib2==0.6.0.post1
-# functools32==3.2.3.post2  # this is for python2 only, and json_transport has python3 consumers
-importlib-metadata==2.1.1
-jsonschema==3.2.0
-pathlib2==2.3.5
-pyrsistent==0.16.1
-scandir==1.10.0
-six==1.16.0
-zipp==1.2.0
+attrs==22.2.0             # via jsonschema
+importlib-metadata==4.8.3  # via jsonschema
+jsonschema==3.2.0         # via -r requirements.in
+pyrsistent==0.18.0        # via jsonschema
+six==1.16.0               # via jsonschema
+typing-extensions==4.1.1  # via importlib-metadata
+zipp==3.6.0               # via importlib-metadata
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
