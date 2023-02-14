@@ -30,7 +30,7 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define JSON_TRANSPORT_JSON_TRANSPORT_HPP
 
 #include "json_transport/nlohmann/json.hpp"
-#include "json_msgs/Json.h"
+#include <json_msgs/Json.h>
 
 #include <ros/message_traits.h>
 #include <ros/serialization.h>

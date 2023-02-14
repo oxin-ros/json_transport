@@ -26,7 +26,7 @@ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
 IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
 OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
-<package format="2">
+<package format="3">
   <name>json_transport</name>
   <version>0.5.0</version>
   <description>JSON transport for ROS</description>
@@ -41,10 +41,15 @@ OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   <depend>json_msgs</depend>
   <depend>roscpp</depend>
 
-  <test_depend>catkin_virtualenv</test_depend>
+  <!-- TODO: enable testing. -->
+  <!--
+    Currently there's an issue where `catkin_install_python` is overridden by catkin_virtualenv
+    which causes issues when building with catkin_make. Disable this testing for now to avoid the issue.
+  -->
+  <!-- <test_depend>catkin_virtualenv</test_depend>
   <test_depend>roslint</test_depend>
   <test_depend>rostest</test_depend>
-  <test_depend>rosunit</test_depend>
+  <test_depend>rosunit</test_depend> -->
 
   <export>
     <pip_requirements>requirements.txt</pip_requirements>
